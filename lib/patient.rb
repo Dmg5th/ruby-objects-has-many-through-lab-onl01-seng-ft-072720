@@ -20,7 +20,9 @@ class Patient
       Appointment.new(date,self,doctor)  
     end 
     
-    
+    def doctors
+      Appointment.all.map { |apps| apps.doctor }  
+    end 
   
   
   
