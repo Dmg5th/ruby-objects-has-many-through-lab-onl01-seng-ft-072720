@@ -15,11 +15,10 @@ class Genre
     end 
 
     def songs 
-        Song.all.select { |songs| songs.genre == self }
-    end
+        Song.all
     
     def genres 
-      Song.all.collect { |song| song.genre }
+      Song.all.map { |song| song.genre }
     end 
 
     def self.all 
