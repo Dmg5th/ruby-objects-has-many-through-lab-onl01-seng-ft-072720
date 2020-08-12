@@ -24,6 +24,4 @@ class Doctor
       Appointment.all.collect { |apps| apps.patient }
     end 
   
-  
-  
 end 
