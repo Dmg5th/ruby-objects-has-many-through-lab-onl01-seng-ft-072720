@@ -10,8 +10,8 @@ class Genre
         @@all << self
     end 
 
-    def name 
-        @name
+     def self.all 
+        @@all 
     end 
 
     def songs 
@@ -22,9 +22,7 @@ class Genre
       Song.all.map { |song| song.genre }
     end 
 
-    def self.all 
-        @@all 
-    end 
+  
 
     
 end 
