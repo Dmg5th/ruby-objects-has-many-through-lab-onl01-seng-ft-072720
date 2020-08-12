@@ -20,7 +20,7 @@ class Genre
     end
     
     def artists  
-      Song.all.map { |song| song.genre }
+      Song.all.map { |song| song.artist }
     end 
 
   
